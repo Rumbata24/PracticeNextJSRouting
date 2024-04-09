@@ -1,4 +1,10 @@
+import { notFound } from "next/navigation";
+
 export default function ProductReview({ params }) {
+  if (parseInt(params.reviewId) > 1000) {
+    notFound();
+  }
+
   return (
     <>
       <h1>
