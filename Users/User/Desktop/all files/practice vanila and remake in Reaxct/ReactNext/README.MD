@@ -35,3 +35,27 @@ Next.js simplifies the process of building a web applications for production.
 * Styling -
 * Optimization - next.js provides optimal version for images, fonts and scripts to improve applications core web vitals and user experience.
 * Dev and production build system - allows focusing on coding rather than configuration.
+
+
+
+React Server Components (RSC)
+-
+RSC is a new architecture introduced by the React team in version 18 witch was quickly embraced by Next.js
+
+The architecture introduces a new way of creating React components, splitting them into two types:
+
+* Server components
+* Client components
+
+React Server Components contd.
+-
+Server Components
+* In Next.js, all components are Server components by default.
+* They have the ability to run tasks like reading files or fetching data from a database
+* However, they don;t have the ability to use hooks or handle user interactions.
+  
+Client Components
+* To create a Client component, it's necessary to add "use client" at the top of the component file.
+* Unlike Server components, client components can't perform tasks like reading files, but they have the ability to use hooks and manage interactions.
+* Client Components are the traditional React components that we are familiar with and have used in all prior versions of React.
+* 
